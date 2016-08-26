@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/anandkumar">
+
+    <TextView android:text="Given Number is prime or Not" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="18dp"
+        android:textSize="32dp"
+        android:id="@+id/prime"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct/Incorrect"
+        android:textSize="24dp"
+        android:id="@+id/button"
+        android:layout_marginTop="66dp"
+        android:theme="@style/Base.AlertDialog.AppCompat"
+        android:layout_below="@+id/prime"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:textSize="24dp"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button"
+        android:layout_toRightOf="@+id/num"
+        android:layout_toEndOf="@+id/num" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/num"
+        android:textSize="24dp"
+        android:layout_below="@+id/prime"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Hint"
+        android:id="@+id/button2"
+        android:textSize = "24dp"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/prime"
+        android:layout_alignStart="@+id/prime"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Cheat"
+        android:id="@+id/button4"
+        android:textSize = "24dp"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
